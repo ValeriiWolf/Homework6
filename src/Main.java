@@ -69,17 +69,13 @@ public class Main {
 
     public static void task9() {
         int salary = 29000;
-        double totalContribution = 0.;
-        int totalSumm = 0;
         double totalPenny = 0;
         double percent = 0.12;
         double percentInMonth = percent / 12;
         for (int i = 1; i <= 12; i++) {
             totalPenny = totalPenny + totalPenny * percentInMonth;
             totalPenny = totalPenny + salary;
-            totalSumm = (int) (totalPenny * 100);
-            totalContribution = totalSumm / 100.;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + totalContribution + " рублей");
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + totalPenny + " рублей");
         }
     }
 
